@@ -281,7 +281,8 @@ if (headParam.trim() != "") {
                                                                }
                                                             })
               if (bodyMsg != "") {
-                send("~" + MsgData.colorMgmt.cmdDefault[cmd][1] + " " + target + sStr + startColor + bodyMsg + eStr + "$c0000$c" + MsgData[cmd]["defColor"], sendSilent);
+                const finalMsg = "~" + MsgData.colorMgmt.cmdDefault[cmd][1] + " " + target + sStr + startColor + bodyMsg + eStr + "$c0000$c" + MsgData[cmd]["defColor"];
+                send(finalMsg.replace(/\\/gm,"\\\\"), sendSilent);
               }
             }
           }//Fine del for
