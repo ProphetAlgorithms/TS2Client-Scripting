@@ -110,6 +110,10 @@ if (typeof otherMgmtData == 'undefined' || _.isEmpty(otherMgmtData) === true) {
                                                     "sangue drago goccia": {
                                                                   "priority": false,
                                                                   "key": ["sangue","drago","goccia"]
+                                                                 },
+                                                    "pegno male qlilith": {
+                                                                  "priority": true,
+                                                                  "key": ["pegno"]
                                                                  }
                                                    }
                                      }
